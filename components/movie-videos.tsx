@@ -1,4 +1,4 @@
-import { API_URL } from "../app/(home)/page";
+import { API_URL } from "../lib/constants";
 import styles from "../styles/movie-videos.module.css";
 
 //영화 예고편, 티저 fetching하기
