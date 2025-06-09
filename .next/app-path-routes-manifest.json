@@ -1,0 +1,7 @@
+{
+  "/(movies)/movies/[id]/page": "/movies/[id]",
+  "/_not-found/page": "/_not-found",
+  "/(home)/page": "/",
+  "/about-us/company/jobs/sales/page": "/about-us/company/jobs/sales",
+  "/about-us/page": "/about-us"
+}
