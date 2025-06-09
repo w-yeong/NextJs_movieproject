@@ -1,0 +1,28 @@
+.container {
+    display: grid;
+    /* 2열로 나누되, 비율은 1:2 */
+    grid-template-columns: 1fr 2fr;
+    gap: 50px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.poster {
+    border-radius: 20px;
+    max-width: 70%;
+    /* 아이템의 정렬위치를 그리드 내에서 가로, 세로 모두 중앙으로 */
+    place-self: center;
+}
+
+.title {
+    color: white;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 20px;
+}

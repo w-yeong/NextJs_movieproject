@@ -1,0 +1,31 @@
+.nav {
+    background-color: #2d2d2d;
+    /* 스크롤해도 위치 고정 */
+    position: fixed;
+    width: 30%;
+    margin: 0 auto;
+    top: 20px;
+    left: 50%;
+    border-radius: 50px;
+    padding: 20px 0px;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.nav ul li {
+    list-style: none;
+    transform: none;
+    /* 모든 변화(마우스오버효과 등)가 0.1초간 부드럽게 이어진다. */
+    transition: all 0.1s ease-in-out;
+}
+
+.nav ul li:hover {
+    /* 마우스오버시 살짝 커짐 */
+    transform: scale(1.05);
+}

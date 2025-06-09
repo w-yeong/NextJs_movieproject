@@ -1,0 +1,9 @@
+.container {
+    display: grid;
+    /* 5개의 열을 만들고, 각 1등분씩 즉 동일한 너비의 열을 만듬 */
+    grid-template-columns: repeat(5, 1fr);
+    gap: 25px;
+    max-width: 90%;
+    width: 100%;
+    margin: 0 auto;
+}

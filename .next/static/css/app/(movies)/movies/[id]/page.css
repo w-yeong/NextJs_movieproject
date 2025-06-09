@@ -1,0 +1,103 @@
+/*!*******************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./styles/movie.module.css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************/
+.movie_movie__n6Ry2 {
+    /* 행과 열 기준으로 정렬 */
+    display: grid;
+    /* 1개의 열을 만들어 정렬 */
+    grid-template-rows: 1fr auto;
+    grid-gap: 20px;
+    gap: 20px;
+    cursor: pointer;
+    place-items: center;
+}
+
+.movie_movie__n6Ry2 img {
+    max-width: 100%;
+    min-height: 100%;
+    border-radius: 10px;
+    /* 투명도가 변할 때 0.3초동안 부드럽게 전환됨 */
+    transition: opacity 0.3s ease-in-out;
+}
+
+.movie_movie__n6Ry2 img {
+    opacity: 0.7;
+}
+
+.movie_movie__n6Ry2 img:hover {
+    opacity: 1;
+}
+
+.movie_movie__n6Ry2 a {
+    text-align: center;
+}
+/*!******************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./styles/home.module.css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************/
+.home_container__STkGE {
+    display: grid;
+    /* 5개의 열을 만들고, 각 1등분씩 즉 동일한 너비의 열을 만듬 */
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 25px;
+    gap: 25px;
+    max-width: 90%;
+    width: 100%;
+    margin: 0 auto;
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./styles/movie-info.module.css ***!
+  \************************************************************************************************************************************************************************************************************************************************************************/
+.movie-info_container__FB7p9 {
+    display: grid;
+    /* 2열로 나누되, 비율은 1:2 */
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 50px;
+    gap: 50px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.movie-info_poster__Ewjrh {
+    border-radius: 20px;
+    max-width: 70%;
+    /* 아이템의 정렬위치를 그리드 내에서 가로, 세로 모두 중앙으로 */
+    place-self: center;
+}
+
+.movie-info_title__Rggks {
+    color: white;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.movie-info_info__RVgwq {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 20px;
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./styles/movie-videos.module.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************/
+.movie-videos_container__eIz3l {
+    /* 라이브css */
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    /* 그리드 자동맞춤(가능한 많은 열 그리드 내 배치), 1열당 최소 250px */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    gap: 20px;
+    margin-top: 100px;
+    padding-bottom: 100px;
+}
+
+.movie-videos_container__eIz3l iframe {
+    border-radius: 10px;
+    opacity: 0.8;
+    transition: opacity 0.1s ease-in-out;
+}
+
+.movie-videos_container__eIz3l iframe:hover {
+    opacity: 1;
+}
