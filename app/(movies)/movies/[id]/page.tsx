@@ -2,6 +2,8 @@ import { Suspense } from "react";
 import { API_URL } from "../../../../lib/constants";
 import MovieInfo, { getMovies } from "../../../../components/movie-info";
 import MovieVideos from "../../../../components/movie-videos";
+import styles from "../../../../styles/movie-page.module.css";
+import MovieTab from "../../../../components/movie-tab";
 
 //Next.js 데이터 페칭 관련 함수는 async 함수여야 하고,그 파라미터인 params, searchParams도 비동기 처리 흐름에 맞게 받게 바뀜
 //Promise를 반환하는 타입으로 변경된 경우 존재
@@ -28,8 +30,9 @@ export default async function MovieDetail({params}:IParams) {
         <Suspense fallback={<h1>Loading movie info</h1>}>
             <MovieInfo id={id}/>
         </Suspense>
-        <Suspense fallback={<h1>Loading movie videos</h1>}>
+        <MovieTab id={id}/>
+        {/* <Suspense fallback={<h1>Loading movie videos</h1>}>
             <MovieVideos id={id}/>
-        </Suspense>
+        </Suspense> */}
     </div>
 }

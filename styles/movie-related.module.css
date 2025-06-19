@@ -1,0 +1,100 @@
+
+.entire {
+    width: 100%;
+    height: 650px;
+}
+
+.entire h2 {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.entire .container {
+    margin: 0 auto;
+    display: flex;
+    gap: 25px;
+    overflow-x: auto;
+    padding: 20px 40px;
+    scroll-behavior: smooth;
+    /* 포스터 시작지점 설정 */
+    padding-left: 10%;
+
+    /* 스크롤 바 숨기기 */
+    scrollbar-width: none;
+}
+
+
+.entire .card {
+    width: 160px;
+    flex-shrink: 0;
+    transition: transform 0.3s ease-in-out;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.entire .sliderWrapper {
+    position: relative;
+}
+
+.entire .sliderWrapper .arrowLeft,
+.entire .sliderWrapper .arrowRight {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    position: absolute; /* 필요한 위치 조정 가능 */
+    top: 45%;
+    transform: translateY(-50%);
+    z-index: 10;
+    transition: transform 0.3s ease-in-out;
+    vertical-align: middle;
+    transform-origin: center center;
+}
+
+.entire .sliderWrapper .arrowLeft {
+    left: 10px;
+}
+
+.entire .sliderWrapper .arrowRight {
+    right: 10px;
+}
+
+.entire .sliderWrapper .arrowLeft:hover,
+.entire .sliderWrapper .arrowRight:hover {
+    /* scale만 작성 시, 버튼 아래로 내려가는 문제 발생, 중앙정렬을 위해 translateY 함께 작성 */
+    transform: translateY(-50%) scale(1.2);
+}
+
+.entire .card .img_wrapper {
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    box-shadow: 5px 5px 15px rgb(19, 19, 19);
+    /* 이미지가 튀어나올 수 있게 */
+    overflow: visible;
+}
+
+.entire .container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* img:hover 붙여 써야함. 중간에 띄어쓰기하면 img안에 있는 어떤 요소에 적용 */
+.entire .container img:hover {
+    transform: scale(1.2);
+    /* 이미지가 튀어나오게 하기 위해서 우선순위 변경 */
+    z-index: 10;
+}
+
+.entire .container p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 17px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

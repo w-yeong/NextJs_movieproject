@@ -22,7 +22,7 @@ export default async function MovieInfo ({id} : {id:string}) {
             <a href={movie.homepage}
             // 새 창을 통해 영화 홈페이지로 이동
             target={"_blank"}
-            >HomePage →</a>
+            >🏠︎ Home →</a>
         </div>
     </div>)
 };
