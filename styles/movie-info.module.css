@@ -9,7 +9,7 @@
 
 .poster {
     border-radius: 20px;
-    max-width: 70%;
+    max-width: 90%;
     /* 아이템의 정렬위치를 그리드 내에서 가로, 세로 모두 중앙으로 */
     place-self: center;
 }
@@ -27,19 +27,62 @@
     gap: 20px;
 }
 
-.info p {
-    line-height: 1.2;
+.add {
+    display: flex;
+    gap: 14px;
+    font-size: 16px;
+    color: #999999;
+    font-weight: bold;
 }
 
-.info a {
-    margin-left: auto;
-    margin-top: 6px;
+.info .add .h3 {
+    display: flex;
+    gap: 14px;
+}
+
+.info .add .genre {
+    gap: 20px;
+}
+
+.info .p1 {
+    line-height: 1.4;
+    width: 70%;
+}
+
+.info .RoundTab {
+    margin-top: 10px;
+    display: flex;
+    gap: 14px;
+}
+
+.info .RoundTab .home {
     display: inline-block;
-    width: fit-content;
-    border: 1.4px solid gray;
-    border-radius: 50px;
-    padding: 14px 14px;
-    font-size: 15px;
-    cursor: pointer;
-    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    background-image: url("/images/house.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: background-image 0.2s ease;
+}
+
+.info .RoundTab .ott {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-image: url("/images/ott.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: background-image 0.2s ease;
+}
+
+.info .RoundTab .home:hover {
+    width: 50px;
+    height: 50px;
+    background-image: url("/images/house_wh.png");
+}
+
+.info .RoundTab .ott:hover {
+    width: 50px;
+    height: 50px;
+    background-image: url("/images/ott_wh.png");
 }

@@ -17,14 +17,16 @@ export default function MovieCredit({id}:{id:string}){
             onError={(err)=> setError(err)}
             channel = 'credits'
         />
-        {error && <h1>Failed to load credits</h1>}
+        {/* style 별도로 class 없이 지정하고 싶을 때 사용 */}
+        {error && <h1 style={{ width: "80%" }}>Failed to load credits</h1>}
         {/* credits에 아무 데이터도 없을 때 발동 */}
         {!error && credits.length === 0 && <h1>Loading movie credits</h1>}
         {credits.map((credit) => (
             <div key={credit.id} >
                 {/* 이미지 불러올 땐 public/ 경로는 빼야함. */}
                 <img src={credit.profile_path ? credit.profile_path : "/images/blank_profile.png"}/>
-                <p>{credit.name}</p>
+                <p className={styles.role}>{credit.character}</p>
+                <p className={styles.name}>{credit.name}</p>
             </div>
         ))}
     </div>

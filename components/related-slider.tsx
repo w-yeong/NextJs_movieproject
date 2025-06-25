@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import styles from "../styles/movie-related.module.css";
+import Link from 'next/link';
 
 export default function RelatedSlider({related}){
         const scrollRef = useRef(null);
@@ -30,12 +31,15 @@ export default function RelatedSlider({related}){
                     {related.map((relate)=>(
                         // poster_path가 있을 경우에만 아래 코드 작동
                         relate.poster_path && (
-                        <div key={relate.id} className={styles.card}>
-                            <div className={styles.img_wrapper}>
-                                <img src={relate.poster_path}/>
+                        // Next.js에서는 onClick을 통해 이동하는 대신 Link를 사용하는 걸 권장
+                        <Link href={`/movies/${relate.id}`} key={relate.id}>
+                            <div className={styles.card}>
+                                <div className={styles.img_wrapper}>
+                                    <img src={relate.poster_path}/>
+                                </div>
+                                <p>{relate.title}</p>
                             </div>
-                            <p>{relate.title}</p>
-                        </div>
+                        </Link>
                         )
                     ))}
                 </div>

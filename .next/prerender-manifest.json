@@ -1,30 +1,6 @@
 {
   "version": 4,
   "routes": {
-    "/about-us": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "Next-Action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/about-us",
-      "dataRoute": "/about-us.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
     "/about-us/company/jobs/sales": {
       "experimentalBypassFor": [
         {
@@ -72,13 +48,37 @@
         "x-next-revalidated-tags",
         "x-next-revalidate-tag-token"
       ]
+    },
+    "/about-us": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "Next-Action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/about-us",
+      "dataRoute": "/about-us.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
     }
   },
   "dynamicRoutes": {},
   "notFoundRoutes": [],
   "preview": {
-    "previewModeId": "b7927e79dee1bf30591f39bc9dc1e9c8",
-    "previewModeSigningKey": "e6b6953197dc7ffd5cae528da8adbf7fe180f89b7faf6758387fb93dfd0dd54d",
-    "previewModeEncryptionKey": "1089a8cd631d1520bb2ea31eca0cfb72b1f36f7770efb21d690e4a9b623bf3c4"
+    "previewModeId": "c64ae8a359629e611e9d73872766ac2d",
+    "previewModeSigningKey": "cbaa05f029f9414c98fb1e3d6f0ae3930ab0771539fad2419411af8b0c1b4793",
+    "previewModeEncryptionKey": "080d1d253a4901a1d7a3d6f79013a091df7a3fc2d8c7c6683ab27426ada45b24"
   }
 }

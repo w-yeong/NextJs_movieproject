@@ -85,7 +85,7 @@
 
 /* img:hover 붙여 써야함. 중간에 띄어쓰기하면 img안에 있는 어떤 요소에 적용 */
 .entire .container img:hover {
-    transform: scale(1.2);
+    transform: scale(1.15);
     /* 이미지가 튀어나오게 하기 위해서 우선순위 변경 */
     z-index: 10;
 }
@@ -94,6 +94,7 @@
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 17px;
+    text-align: center;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
