@@ -1,7 +1,7 @@
 {
   "version": 4,
   "routes": {
-    "/about-us/company/jobs/sales": {
+    "/about-us": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -14,8 +14,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/about-us/company/jobs/sales",
-      "dataRoute": "/about-us/company/jobs/sales.rsc",
+      "srcRoute": "/about-us",
+      "dataRoute": "/about-us.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -49,7 +49,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/about-us": {
+    "/about-us/company/jobs/sales": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -62,8 +62,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/about-us",
-      "dataRoute": "/about-us.rsc",
+      "srcRoute": "/about-us/company/jobs/sales",
+      "dataRoute": "/about-us/company/jobs/sales.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -77,8 +77,8 @@
   "dynamicRoutes": {},
   "notFoundRoutes": [],
   "preview": {
-    "previewModeId": "c64ae8a359629e611e9d73872766ac2d",
-    "previewModeSigningKey": "cbaa05f029f9414c98fb1e3d6f0ae3930ab0771539fad2419411af8b0c1b4793",
-    "previewModeEncryptionKey": "080d1d253a4901a1d7a3d6f79013a091df7a3fc2d8c7c6683ab27426ada45b24"
+    "previewModeId": "fbee95f07015e282f3f92cdef0afda18",
+    "previewModeSigningKey": "21a0eb9b75589ae168ab7aa695e8ee9909a36b065379cac91d25e13004dcfa0f",
+    "previewModeEncryptionKey": "9fe7b468a0f9119a02d09159d321f6a93863022d6e1ef7126704a1dffe7347ba"
   }
 }

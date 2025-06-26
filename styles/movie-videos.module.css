@@ -1,12 +1,12 @@
 .container {
     /* 라이브css */
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
     display: grid;
     /* 그리드 자동맞춤(가능한 많은 열 그리드 내 배치), 1열당 최소 250px */
-    grid-template-columns: repeat(auto-fit, minmax(250px, 250px));
+    grid-template-columns: repeat(auto-fit, minmax(310px, 310px));
     gap: 20px;
-    margin-top: 60px;
+    margin-top: 50px;
     padding-bottom: 100px;
 }
 

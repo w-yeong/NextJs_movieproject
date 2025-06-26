@@ -22,7 +22,8 @@ export default function MovieCredit({id}:{id:string}){
         {/* credits에 아무 데이터도 없을 때 발동 */}
         {!error && credits.length === 0 && <h1>Loading movie credits</h1>}
         {credits.map((credit) => (
-            <div key={credit.id} >
+            // 같은 배우가 다른 배역시 id가 중복되는 경우 발견, 이에 캐릭터명까지 key에 넣어 중복으로 인식 방지
+            <div key={`${credit.id}-${credit.character}`} >
                 {/* 이미지 불러올 땐 public/ 경로는 빼야함. */}
                 <img src={credit.profile_path ? credit.profile_path : "/images/blank_profile.png"}/>
                 <p className={styles.role}>{credit.character}</p>

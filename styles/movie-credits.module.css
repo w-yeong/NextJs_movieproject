@@ -1,11 +1,11 @@
 .container {
     /* 라이브css */
-    width: 80%;
+    width: 70%;
     display: grid;
     margin : 0 auto;
     /* 그리드 자동맞춤(가능한 많은 열 그리드 내 배치), 최소 및 최대 140px */
-    grid-template-columns: repeat(auto-fit, minmax(140px, 140px));
-    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(175px, 175px));
+    gap: 30px;
     margin-top: 60px;
     padding-bottom: 100px;
 }
@@ -16,9 +16,9 @@
 }
 
 .container p {
-    margin-top: 10px;
-    margin-bottom: 6px;
-    font-size: 15px;
+    margin-top: 16px;
+    margin-bottom: 10px;
+    font-size: 17px;
     text-align: center;
 }
 

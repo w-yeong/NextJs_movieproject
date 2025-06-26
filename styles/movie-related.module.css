@@ -5,22 +5,23 @@
 }
 
 .entire h2 {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 38px;
     font-weight: bold;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
+    font-size: 20px;
 }
 
 .entire .container {
     margin: 0 auto;
     display: flex;
-    gap: 25px;
+    gap: 28px;
     overflow-x: auto;
     padding: 20px 40px;
     scroll-behavior: smooth;
     /* 포스터 시작지점 설정 */
-    padding-left: 10%;
+    padding-left: 15%;
 
     /* 스크롤 바 숨기기 */
     scrollbar-width: none;
@@ -28,7 +29,7 @@
 
 
 .entire .card {
-    width: 160px;
+    width: 190px;
     flex-shrink: 0;
     transition: transform 0.3s ease-in-out;
     white-space: nowrap;
@@ -93,7 +94,7 @@
 .entire .container p {
     margin-top: 10px;
     margin-bottom: 10px;
-    font-size: 17px;
+    font-size: 20px;
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
